@@ -20,9 +20,9 @@ potentially impacted Listener pages.
 
 Steps to Reproduce
 ==================
-Step 1: Open issue/emitter.html in a tab.
-Step 2: Open issue/listener.html in other tab (stay here for more than 5 min)
-Step 3: You will observe timer on listener degradges after 5 min.
+* Step 1: Open issue/emitter.html in a tab.
+* Step 2: Open issue/listener.html in other tab (stay here for more than 5 min)
+* Step 3: You will observe timer on listener degradges after 5 min.
 
 Solution
 ========
@@ -32,9 +32,9 @@ when the Emitter page goes out-of-focus for a long-time.
 
 Steps to Review
 ===============
-Step 1: Open solution/emitter.html in a tab.
-Step 2: Open solution/listener.html in other tab (stay here for more than 5 min)
-Step 3: You will observe timer on listener continues well for long time.
+* Step 1: Open solution/emitter.html in a tab.
+* Step 2: Open solution/listener.html in other tab (stay here for more than 5 min)
+* Step 3: You will observe timer on listener continues well for long time.
 
 
 Usage
