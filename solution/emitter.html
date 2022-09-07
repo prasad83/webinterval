@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Emitter</title>
+        <script src="../lib/web_interval.js"></script>
+    </head>
+    <body>
+            <h1>Emitter</h1>
+
+            <script>
+                var startTime = +new Date;
+                var bc = new BroadcastChannel('test_channel');
+                function timeoutMessage() {
+                    var currentTime = +new Date;
+                    var message = "EmitterTimeElapsed = " + ((currentTime - startTime) / 1000);
+                    console.log(message);
+                    bc.postMessage(message, "*")
+                }
+
+                window.addEventListener('DOMContentLoaded', function(){
+                    setInterval(timeoutMessage, 1*1000);
+                })
+            </script>
+    </body>
+</html>
