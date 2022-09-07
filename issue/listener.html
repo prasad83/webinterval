@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Listener</title>
+    </head>
+    <body>
+            <h1>Listener</h1>
+            <div id="timer"></div>
+            <script>
+                function displayMessage(message) {
+                    document.getElementById("timer").innerText = message.data;
+                }
+                var bc = new BroadcastChannel('test_channel');
+                bc.onmessage = displayMessage;
+            </script>
+    </body>
+</html>
